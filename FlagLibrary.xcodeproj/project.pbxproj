@@ -32,6 +32,7 @@
 		AA1DFA4B2B878EF400BFC1F1 /* japan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA1DFA372B878EF400BFC1F1 /* japan.jpg */; };
 		AA1DFA4C2B878EF400BFC1F1 /* uzbekistan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA1DFA382B878EF400BFC1F1 /* uzbekistan.jpg */; };
 		AA1DFA4D2B878EF400BFC1F1 /* nauru.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA1DFA392B878EF400BFC1F1 /* nauru.jpg */; };
+		AA9C3B702B887A7900C83034 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9C3B6F2B887A7900C83034 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		AA1DFA372B878EF400BFC1F1 /* japan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = japan.jpg; sourceTree = "<group>"; };
 		AA1DFA382B878EF400BFC1F1 /* uzbekistan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uzbekistan.jpg; sourceTree = "<group>"; };
 		AA1DFA392B878EF400BFC1F1 /* nauru.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nauru.jpg; sourceTree = "<group>"; };
+		AA9C3B6F2B887A7900C83034 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				AA1DF92F2B877B9F00BFC1F1 /* AppDelegate.swift */,
 				AA1DF9312B877B9F00BFC1F1 /* SceneDelegate.swift */,
 				AA1DF9332B877B9F00BFC1F1 /* ViewController.swift */,
+				AA9C3B6F2B887A7900C83034 /* DetailVC.swift */,
 				AA1DF9352B877B9F00BFC1F1 /* Main.storyboard */,
 				AA1DF9382B877BA000BFC1F1 /* Assets.xcassets */,
 				AA1DF93A2B877BA000BFC1F1 /* LaunchScreen.storyboard */,
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA1DF9342B877B9F00BFC1F1 /* ViewController.swift in Sources */,
+				AA9C3B702B887A7900C83034 /* DetailVC.swift in Sources */,
 				AA1DF9302B877B9F00BFC1F1 /* AppDelegate.swift in Sources */,
 				AA1DF9322B877B9F00BFC1F1 /* SceneDelegate.swift in Sources */,
 			);

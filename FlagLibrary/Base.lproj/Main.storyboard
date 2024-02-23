@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,21 +17,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Picture" textLabel="1t1-6p-XAE" style="IBUITableViewCellStyleDefault" id="4PG-r0-frc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Picture" focusStyle="custom" id="4PG-r0-frc">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4PG-r0-frc" id="23y-56-Bw2">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4PG-r0-frc" id="23y-56-Bw2">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1t1-6p-XAE">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -40,6 +32,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="i30-Ix-72q"/>
+                    <connections>
+                        <segue destination="a3i-f4-hb9" kind="show" id="SHK-lQ-cyp"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pmx-wE-c7w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,8 +58,39 @@
             </objects>
             <point key="canvasLocation" x="-152.17391304347828" y="-121.20535714285714"/>
         </scene>
+        <!--DetailVC-->
+        <scene sceneID="AzV-i7-7VG">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="a3i-f4-hb9" customClass="DetailVC" customModule="FlagLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="no7-gD-WpX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="austria.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="F7f-4Z-5Cm">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XZr-RH-hJV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F7f-4Z-5Cm" firstAttribute="leading" secondItem="XZr-RH-hJV" secondAttribute="leading" id="I2n-rz-yT1"/>
+                            <constraint firstItem="XZr-RH-hJV" firstAttribute="trailing" secondItem="F7f-4Z-5Cm" secondAttribute="trailing" id="Md1-iw-Ew9"/>
+                            <constraint firstItem="F7f-4Z-5Cm" firstAttribute="top" secondItem="XZr-RH-hJV" secondAttribute="top" id="VXE-pV-I0b"/>
+                            <constraint firstItem="XZr-RH-hJV" firstAttribute="bottom" secondItem="F7f-4Z-5Cm" secondAttribute="bottom" id="ZVZ-dy-Vto"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Ns-0U-gqC"/>
+                    <connections>
+                        <outlet property="imageView" destination="F7f-4Z-5Cm" id="JsN-Ld-Ahf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cbf-Gs-JGN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1722" y="-122"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="austria.jpg" width="700" height="506"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
